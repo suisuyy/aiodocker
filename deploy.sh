@@ -5,7 +5,7 @@
 alias pacman='pacman --noconfirm'
 
 #utils
-pacman -Syu  --noconfirm wget curl ttyd aria2 w3m
+pacman -Syu  --noconfirm wget curl ttyd aria2 w3m busybox
 #python
 pacman -Syu  --noconfirm  python3 python-pip
 #node
@@ -25,7 +25,7 @@ echo -e 'tt\ntt\n' | passwd gpt
 echo -e 'tt\ntt\n' | passwd test
 
 
-/bin/ttyd -p 4002 -c gpt:gpt /bin/bash &
+/bin/ttyd -P 4002 -i lo busybox login &
 cd /tmp
 python -m http.server --bind :: 4003 &
 python -m http.server --bind :: 4010 &
