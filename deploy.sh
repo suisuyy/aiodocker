@@ -25,7 +25,7 @@ echo -e 'tt\ntt\n' | passwd gpt
 echo -e 'tt\ntt\n' | passwd test
 
 
-/bin/ttyd -p 4002 /bin/login &
+/bin/ttyd -p 4002 -c gpt:gpt /bin/bash &
 cd /tmp
 python -m http.server --bind :: 4003 &
 python -m http.server --bind :: 4010 &
