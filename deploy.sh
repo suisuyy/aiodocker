@@ -2,7 +2,6 @@
 
 # readme
 #default user:passwd root:tt  gpt:tt t:tt test:tt , alist at port 4001 ttyd at port 4002,http /tmp at 4003 and 4010
-set -x
 alias pacman='pacman --noconfirm'
 
 #utils
