@@ -7,5 +7,16 @@ RUN pacman -S --noconfirm ttyd python3 wget curl
 
 EXPOSE 80
 WORKDIR /root
+COPY deploy.sh /root/
+#RUN bash deploy.sh
+CMD ["/bin/bash","/root/deploy.sh"]
 
-CMD ["/bin/ttyd","-p" ,"4002","/bin/bash"]
+
+
+
+
+
+
+
+
+
