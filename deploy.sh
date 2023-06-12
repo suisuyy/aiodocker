@@ -25,7 +25,7 @@ echo -e 'tt\ntt\n' | passwd gpt
 echo -e 'tt\ntt\n' | passwd test
 
 
-/bin/ttyd -P 4002 -i lo busybox login &
+/bin/ttyd -P 4002  /bin/busybox login &
 cd /tmp
 python -m http.server --bind :: 4003 &
 python -m http.server --bind :: 4010 &
