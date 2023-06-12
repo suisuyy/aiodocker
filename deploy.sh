@@ -5,9 +5,9 @@
 alias pacman='pacman --noconfirm'
 
 #utils
-pacman -Sy  --noconfirm wget curl ttyd aria2 w3m
+pacman -Syu  --noconfirm wget curl ttyd aria2 w3m
 #python
-pacman -Sy  --noconfirm  python3 python-pip
+pacman -Syu  --noconfirm  python3 python-pip
 #node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
@@ -25,7 +25,7 @@ echo -e 'tt\ntt\n' | passwd gpt
 echo -e 'tt\ntt\n' | passwd test
 
 
-/bin/ttyd -p 4002 -6 -u 1002 /bin/bash &
+/bin/ttyd -p 4002 /bin/login &
 cd /tmp
 python -m http.server --bind :: 4003 &
 python -m http.server --bind :: 4010 &
