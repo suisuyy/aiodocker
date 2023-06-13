@@ -36,5 +36,5 @@ wget ${DAVURL}/alisthome.tar
 tar xf alisthome.tar
 cd alisthome/
 mkdir /sdata
-./alist server & 
+./alist server 
 /bin/bash
