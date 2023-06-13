@@ -28,7 +28,8 @@ echo -e 'tt\ntt\n' | passwd test
 /bin/ttyd -p 4002  /bin/busybox login &
 cd /tmp
 python -m http.server --bind :: 4003 &
-python -m http.server --bind :: 4010 &
+#python -m http.server --bind :: 4010 &
+/bin/ttyd -p 4010  /bin/bash &
 
 #alist
 cd /root
