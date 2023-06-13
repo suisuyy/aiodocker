@@ -25,7 +25,7 @@ echo -e 'tt\ntt\n' | passwd gpt
 echo -e 'tt\ntt\n' | passwd test
 
 
-/bin/ttyd -P 4002  /bin/busybox login &
+/bin/ttyd -p 4002  /bin/busybox login &
 cd /tmp
 python -m http.server --bind :: 4003 &
 python -m http.server --bind :: 4010 &
@@ -36,5 +36,5 @@ wget ${DAVURL}/alisthome.tar
 tar xf alisthome.tar
 cd alisthome/
 mkdir /sdata
-./alist server 
+./alist server & 
 /bin/bash
