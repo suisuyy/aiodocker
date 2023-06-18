@@ -40,6 +40,7 @@ mkdir /sdata
 ./alist server
 
 echo 'end deploay.sh'
+python -m http.server --bind :: 40001 
 /bin/read
 /bin/bash
 echo 'end last'
