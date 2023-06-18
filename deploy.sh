@@ -37,5 +37,9 @@ wget ${DAVURL}/alisthome.tar
 tar xf alisthome.tar
 cd alisthome/
 mkdir /sdata
-./alist server 
+./alist server
+
+echo 'end deploay.sh'
+/bin/read
 /bin/bash
+echo 'end last'
