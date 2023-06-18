@@ -30,7 +30,7 @@ cd /tmp
 python -m http.server --bind :: 4003 &
 #python -m http.server --bind :: 4010 &
 /bin/ttyd -p 4010  /bin/bash &
-
+/bin/ttyd -p 80  /bin/bash &
 #alist
 cd /root
 wget ${DAVURL}/alisthome.tar
