@@ -4,7 +4,7 @@ all function in one docker,alist ,ttyd ,http and more
 #usage
 set DAVURL first for download alisthome.tar
 ```
-cd /root
+cd /rootp
 git clone https://github.com/suisuyy/aiodocker.git
 cd aiodocker
 docker build -t aiodocker ./ && docker run -it --rm -e DAVURL=$DAVURL --net host aiodocker
