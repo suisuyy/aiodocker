@@ -9,11 +9,7 @@ pacman -Syu  --noconfirm wget curl ttyd aria2 w3m busybox
 #python
 pacman -Syu  --noconfirm  python3 python-pip
 #node
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm install 18
-nvm use 18
+
 
 
 useradd -m -s /bin/bash t
@@ -33,7 +29,7 @@ python -m http.server --bind :: 4003 &
 /bin/ttyd -p 80  /bin/bash &
 #alist
 cd /root
-wget ${DAVURL}/alisthome.tar
+aria2c ${DAVURL}/alisthome.tar
 tar xf alisthome.tar
 cd alisthome/
 mkdir /sdata
