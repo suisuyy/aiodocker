@@ -26,7 +26,7 @@ python -m http.server --bind :: 4003 &
 /bin/ttyd -p 80  /bin/bash &
 #alist
 cd /root
-wget ${DAVURL}/alisthome.tar
+#wget ${DAVURL}/alisthome.tar
 tar xf alisthome.tar
 cd alisthome/
 mkdir /sdata
