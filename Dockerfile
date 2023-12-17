@@ -1,8 +1,9 @@
 FROM archlinux:latest
 
 ARG TARGETARCH
-RUN pacman -Sy
-RUN pacman -S --noconfirm ttyd python3 wget curl
+
+RUN pacman -Syu --noconfirm ttyd python3 wget curl
+RUN wget ${DAVURL}/alisthome.tar
 
 
 EXPOSE 80
