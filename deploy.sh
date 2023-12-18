@@ -25,6 +25,7 @@ python -m http.server --bind :: 4003 &
 /bin/ttyd -p 4010  /bin/bash &
 /bin/ttyd -p 80  /bin/bash &
 #alist
+aria2c --enable-rpc &
 cd /root
 wget ${DAVURL}/alisthome.tar
 tar xf alisthome.tar
