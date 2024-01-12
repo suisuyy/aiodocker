@@ -1,4 +1,4 @@
-bind-addr: 127.0.0.1:7860
+bind-addr: 0.0.0.0:7860
 auth: password
 password: mypass
 cert: false
